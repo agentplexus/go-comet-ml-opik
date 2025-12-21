@@ -3,9 +3,10 @@ package fluxllm
 import (
 	"context"
 
-	"github.com/grokify/go-comet-ml-opik/evaluation/llm"
 	fluxllm "github.com/grokify/fluxllm"
 	"github.com/grokify/fluxllm/provider"
+
+	"github.com/grokify/go-comet-ml-opik/evaluation/llm"
 )
 
 // Provider implements llm.Provider using a gollm.ChatClient.

@@ -6,9 +6,10 @@ import (
 	"strings"
 	"time"
 
-	opik "github.com/grokify/go-comet-ml-opik"
 	fluxllm "github.com/grokify/fluxllm"
 	"github.com/grokify/fluxllm/provider"
+
+	opik "github.com/grokify/go-comet-ml-opik"
 )
 
 // TracingClient wraps a gollm.ChatClient with automatic Opik tracing.
