@@ -9,7 +9,7 @@
 
 Go SDK for [Opik](https://github.com/comet-ml/opik) - an open-source LLM observability platform by Comet ML.
 
-**Current Version: v0.4.0** - See [Release Notes](RELEASE_NOTES_v0.4.0.md)
+**Current Version: v0.5.0** - See [Release Notes](RELEASE_NOTES_v0.5.0.md)
 
 ## Installation
 
@@ -60,6 +60,55 @@ func main() {
     trace.End(ctx)
 }
 ```
+
+## OmniObserve Integration
+
+The SDK includes a built-in `llmops` subpackage that implements the [OmniObserve](https://github.com/agentplexus/omniobserve) `llmops.Provider` interface. This allows you to use Opik through a unified observability abstraction alongside other providers like Phoenix, Langfuse, etc.
+
+```go
+package main
+
+import (
+    "context"
+
+    "github.com/agentplexus/omniobserve/llmops"
+    _ "github.com/agentplexus/go-comet-ml-opik/llmops" // Register Opik provider
+)
+
+func main() {
+    // Open the Opik provider through OmniObserve
+    provider, err := llmops.Open("opik",
+        llmops.WithAPIKey("your-api-key"),
+        llmops.WithWorkspace("your-workspace"),
+        llmops.WithProjectName("my-project"),
+    )
+    if err != nil {
+        panic(err)
+    }
+    defer provider.Close()
+
+    ctx := context.Background()
+
+    // Start a trace
+    ctx, trace, _ := provider.StartTrace(ctx, "my-operation")
+    defer trace.End()
+
+    // Start a span
+    ctx, span, _ := provider.StartSpan(ctx, "llm-call",
+        llmops.WithSpanType(llmops.SpanTypeLLM),
+    )
+    span.SetModel("gpt-4")
+    span.SetInput("Hello, world!")
+    span.SetOutput("Hi there!")
+    span.End()
+}
+```
+
+This pattern allows you to:
+
+- Switch between observability providers (Opik, Phoenix, Langfuse) without code changes
+- Use a consistent API across different LLM observability platforms
+- Build provider-agnostic observability tooling
 
 ## Configuration
 
