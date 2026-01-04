@@ -1,4 +1,4 @@
-# Comet ML Opik SDK for Go
+# Go SDK for Comet ML Opik
 
 [![Build Status][build-status-svg]][build-status-url]
 [![Lint Status][lint-status-svg]][lint-status-url]
