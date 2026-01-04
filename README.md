@@ -728,6 +728,8 @@ MIT License - see [LICENSE](LICENSE) for details.
  [goreport-url]: https://goreportcard.com/report/github.com/agentplexus/go-opik
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/agentplexus/go-opik
  [docs-godoc-url]: https://pkg.go.dev/github.com/agentplexus/go-opik
+ [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fgo-opik
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-url]: https://github.com/agentplexus/go-opik/blob/master/LICENSE
  [used-by-svg]: https://sourcegraph.com/github.com/agentplexus/go-opik/-/badge.svg
