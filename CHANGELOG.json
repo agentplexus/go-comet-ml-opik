@@ -6,7 +6,7 @@
   "commit_convention": "conventional",
   "releases": [
     {
-      "version": "0.5.1",
+      "version": "v0.5.1",
       "date": "2026-01-17",
       "dependencies": [
         { "description": "Bump `omnillm` from v0.9.0 to v0.11.0", "commit": "81960b6" },
@@ -20,8 +20,12 @@
       ]
     },
     {
-      "version": "0.5.0",
+      "version": "v0.5.0",
       "date": "2026-01-03",
+      "highlights": [
+        { "description": "Built-in OmniObserve `llmops` provider for unified LLM observability" },
+        { "description": "Module renamed to `github.com/agentplexus/go-opik` (breaking change)" }
+      ],
       "added": [
         { "description": "Built-in OmniObserve `llmops` provider adapter", "commit": "2ae9fdb" },
         { "description": "`llmops/provider.go` - Full `llmops.Provider` implementation", "commit": "2ae9fdb" },
@@ -42,16 +46,23 @@
       ]
     },
     {
-      "version": "0.4.0",
+      "version": "v0.4.0",
       "date": "2026-01-03",
+      "highlights": [
+        { "description": "Fix span project association and JSON encoding for reliable tracing" }
+      ],
       "fixed": [
         { "description": "Span project association", "commit": "f408c0a" },
         { "description": "JSON encoding issues", "commit": "f408c0a" }
       ]
     },
     {
-      "version": "0.3.0",
+      "version": "v0.3.0",
       "date": "2025-12-27",
+      "highlights": [
+        { "description": "Repository transferred to `agentplexus` organization" },
+        { "description": "Security hardening with SAST fixes in CLI" }
+      ],
       "changed": [
         { "description": "Transferred repository to `agentplexus` organization", "commit": "97add58" }
       ],
@@ -61,8 +72,11 @@
       ]
     },
     {
-      "version": "0.2.0",
+      "version": "v0.2.0",
       "date": "2025-12-21",
+      "highlights": [
+        { "description": "Cross-platform compatibility with Windows test fixes" }
+      ],
       "fixed": [
         { "description": "Windows test compatibility for `TestSaveConfig()`", "commit": "bccdc9e" },
         { "description": "golangci-lint warnings", "commit": "b057d2d" }
@@ -72,8 +86,12 @@
       ]
     },
     {
-      "version": "0.1.0",
+      "version": "v0.1.0",
       "date": "2025-12-20",
+      "highlights": [
+        { "description": "Initial release of go-opik SDK for Comet Opik observability platform" },
+        { "description": "Full tracing support with OpenAI and Anthropic integrations" }
+      ],
       "added": [
         { "description": "Initial release of go-opik SDK", "commit": "db1ad91" },
         { "description": "Core SDK: client, traces, spans, context propagation", "commit": "db1ad91" },
