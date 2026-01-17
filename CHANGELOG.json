@@ -6,6 +6,20 @@
   "commit_convention": "conventional",
   "releases": [
     {
+      "version": "0.5.1",
+      "date": "2026-01-17",
+      "dependencies": [
+        { "description": "Bump `omnillm` from v0.9.0 to v0.11.0", "commit": "81960b6" },
+        { "description": "Update Go module dependencies", "commit": "73cdc71" }
+      ],
+      "documentation": [
+        { "description": "Add commit hashes and conventional commits metadata to changelog", "commit": "53a4276" },
+        { "description": "Add version reference links to changelog", "commit": "bbf448c" },
+        { "description": "Update README title", "commit": "ee07968" },
+        { "description": "Add visualization shield to README", "commit": "2f1bd32" }
+      ]
+    },
+    {
       "version": "0.5.0",
       "date": "2026-01-03",
       "added": [
