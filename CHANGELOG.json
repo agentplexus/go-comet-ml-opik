@@ -2,71 +2,74 @@
   "ir_version": "1.0",
   "project": "go-opik",
   "repository": "https://github.com/agentplexus/go-opik",
+  "versioning": "semver",
+  "commit_convention": "conventional",
   "releases": [
     {
       "version": "0.5.0",
       "date": "2026-01-03",
       "added": [
-        { "description": "Built-in OmniObserve `llmops` provider adapter" },
-        { "description": "`llmops/provider.go` - Full `llmops.Provider` implementation" },
-        { "description": "`llmops/trace.go` - Trace and span adapters" },
-        { "description": "`GetDatasetByID` for retrieving datasets by ID" },
-        { "description": "`DeleteDataset` for removing datasets" },
-        { "description": "`CreateAnnotation` and `ListAnnotations` stubs (returns not implemented)" },
-        { "description": "Integration tests for SDK and llmops provider" },
-        { "description": "Feature comparison matrix in README" }
+        { "description": "Built-in OmniObserve `llmops` provider adapter", "commit": "2ae9fdb" },
+        { "description": "`llmops/provider.go` - Full `llmops.Provider` implementation", "commit": "2ae9fdb" },
+        { "description": "`llmops/trace.go` - Trace and span adapters", "commit": "2ae9fdb" },
+        { "description": "`GetDatasetByID` for retrieving datasets by ID", "commit": "2ae9fdb" },
+        { "description": "`DeleteDataset` for removing datasets", "commit": "2ae9fdb" },
+        { "description": "`CreateAnnotation` and `ListAnnotations` stubs (returns not implemented)", "commit": "2ae9fdb" },
+        { "description": "Integration tests for SDK and llmops provider", "commit": "10a037a" },
+        { "description": "Feature comparison matrix in README", "commit": "2ae9fdb" }
       ],
       "changed": [
         {
           "description": "Module renamed from `github.com/agentplexus/go-comet-ml-opik` to `github.com/agentplexus/go-opik`",
-          "breaking": true
+          "breaking": true,
+          "commit": "2815f74"
         },
-        { "description": "Updated dependency: `omniobserve v0.4.0` to `v0.5.0`" }
+        { "description": "Updated dependency: `omniobserve v0.4.0` to `v0.5.0`", "commit": "516cfad" }
       ]
     },
     {
       "version": "0.4.0",
       "date": "2026-01-03",
       "fixed": [
-        { "description": "Span project association" },
-        { "description": "JSON encoding issues" }
+        { "description": "Span project association", "commit": "f408c0a" },
+        { "description": "JSON encoding issues", "commit": "f408c0a" }
       ]
     },
     {
       "version": "0.3.0",
       "date": "2025-12-27",
       "changed": [
-        { "description": "Transferred repository to `agentplexus` organization" }
+        { "description": "Transferred repository to `agentplexus` organization", "commit": "97add58" }
       ],
       "fixed": [
-        { "description": "SAST security findings in CLI" },
-        { "description": "Code formatting with `gofmt`" }
+        { "description": "SAST security findings in CLI", "commit": "c2513b4" },
+        { "description": "Code formatting with `gofmt`", "commit": "7da3cb1" }
       ]
     },
     {
       "version": "0.2.0",
       "date": "2025-12-21",
       "fixed": [
-        { "description": "Windows test compatibility for `TestSaveConfig()`" },
-        { "description": "golangci-lint warnings" }
+        { "description": "Windows test compatibility for `TestSaveConfig()`", "commit": "bccdc9e" },
+        { "description": "golangci-lint warnings", "commit": "b057d2d" }
       ],
       "changed": [
-        { "description": "Updated dependencies" }
+        { "description": "Updated dependencies", "commit": "75d2048" }
       ]
     },
     {
       "version": "0.1.0",
       "date": "2025-12-20",
       "added": [
-        { "description": "Initial release of go-opik SDK" },
-        { "description": "Core SDK: client, traces, spans, context propagation" },
-        { "description": "Data management: datasets, experiments, prompts" },
-        { "description": "Evaluation framework: heuristic metrics, LLM judges" },
-        { "description": "Integrations: OpenAI, Anthropic tracing transports" },
-        { "description": "CLI tool (`cmd/opik`)" },
-        { "description": "HTTP middleware for automatic tracing" },
-        { "description": "Streaming and batching support" },
-        { "description": "MkDocs documentation site" }
+        { "description": "Initial release of go-opik SDK", "commit": "db1ad91" },
+        { "description": "Core SDK: client, traces, spans, context propagation", "commit": "db1ad91" },
+        { "description": "Data management: datasets, experiments, prompts", "commit": "db1ad91" },
+        { "description": "Evaluation framework: heuristic metrics, LLM judges", "commit": "db1ad91" },
+        { "description": "Integrations: OpenAI, Anthropic tracing transports", "commit": "db1ad91" },
+        { "description": "CLI tool (`cmd/opik`)", "commit": "db1ad91" },
+        { "description": "HTTP middleware for automatic tracing", "commit": "db1ad91" },
+        { "description": "Streaming and batching support", "commit": "db1ad91" },
+        { "description": "MkDocs documentation site", "commit": "db1ad91" }
       ]
     }
   ]
